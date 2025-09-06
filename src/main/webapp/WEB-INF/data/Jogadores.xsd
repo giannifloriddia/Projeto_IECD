@@ -1,0 +1,23 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="jogadores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="jogador" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="nickname"/>
+              <xs:element type="xs:string" name="password"/>
+              <xs:element type="xs:string" name="nacionalidade"/>
+              <xs:element type="xs:string" name="fotografia"/>
+              <xs:element type="xs:string" name="cor-preferida"/>
+              <xs:element type="xs:int" name="vitorias"/>
+              <xs:element type="xs:int" name="derrotas"/>
+              <xs:element type="xs:string" name="tempoJogo"/>
+              <xs:element type="xs:string" name="dataNascimento"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
